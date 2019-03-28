@@ -13,8 +13,8 @@ export default function(p) {
         h = p.max(window.innerHeight);
         p.createCanvas(w, h);
         p.frameRate(60);
-        letters = new TextArray("HelloWorld!", 0.75);
-        text1 = new TextArray("Wavey p5 starter template!", 0.25, 200);
+        letters = new TextArray("HelloWorld!", 0.5);
+        text1 = new TextArray("Wavey p5 + REACT starter", 0.25, 200);
         text2 = new TextArray("get groooooovin", 0.25, h-200);
     };
 
@@ -48,7 +48,7 @@ export default function(p) {
         this.update = function(){
             // Increment theta (try different values for
             // 'angular velocity' here)
-            theta += 0.01;
+            theta += 0.0075;
 
             // For every x value, calculate a y value with sine function
             let x = theta;
