@@ -1,5 +1,14 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
+  display: flex;
+  align-items: flex-start;
+}
+
+.CodeMirror {
+  width: 40vw;
+  height: 90vh !important;
+  overflow: scroll;
+  border: 1px solid black;
 }
 
 .App-logo {

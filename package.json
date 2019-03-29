@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "codemirror": "^5.45.0",
     "p5": "^0.7.3",
     "react": "^16.8.5",
+    "react-codemirror": "^1.0.0",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"
   },

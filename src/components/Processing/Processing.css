@@ -1,12 +1,16 @@
-
+#app-p5_overlay {
+    width: 60vw;
+}
 #app-p5_container {
     z-index: -10000;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5vh;
+    left: 40vw;
     background-attachment: fixed !important;
     overflow: hidden;
-    height: 100%;
+    width: 60vw;
+    height: 90vh;
     min-height: 50vh;
     max-height: 100vh;
+    border: 1px solid black;
 }

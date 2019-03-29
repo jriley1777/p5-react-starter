@@ -1,30 +1,30 @@
 export default function(p) {
     let w, h;
-    let letters, text1, text2;
+    let text1, text2, text3;
 
     let theta = 0.0; // Start angle at 0
     let amplitude = 50.0; // Height of wave
     let period = 500.0; // How many pixels before the wave repeats
     let dx = (p.TWO_PI / period);
 
-
+    const canvas = document.getElementById("app-p5_container");
     p.setup = function() {
-        w = p.max(window.innerWidth);
-        h = p.max(window.innerHeight);
+        w = p.max(canvas.offsetWidth);
+        h = p.max(canvas.offsetHeight);
         p.createCanvas(w, h);
         p.frameRate(60);
-        letters = new TextArray("HelloWorld!", 0.5);
-        text1 = new TextArray("Wavey p5 + REACT starter", 0.25, 200);
-        text2 = new TextArray("get groooooovin", 0.25, h-200);
+        text1 = new TextArray("p5 + REACT", 0.25, 200);
+        text2 = new TextArray("HelloWorld!", 0.5);
+        text3 = new TextArray("get groooooovin", 0.25, h-200);
     };
 
     p.draw = function() {
         p.background(255);
         p.fill(0);
-        letters.draw();
+        text2.draw();
         p.fill(255,0,0);
         text1.draw();
-        text2.draw();
+        text3.draw();
     };
 
     let TextArray = function(string, magic, yOffset=h/2) {
